@@ -17,6 +17,7 @@ spec:
       - name: tracks-rest-api-1-0
         namespace: tracks
         port: 5000
+    # This random matcher that does not exist in the parent causes a matcher for "/" to be created in Envoy
     - matches:  
       - path:
           type: PathPrefix
